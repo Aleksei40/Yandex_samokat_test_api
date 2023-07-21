@@ -1,3 +1,5 @@
+# Никитин Алексей, 6-я когорта -Финальный проект. Инженер по тестированию плюс
+
 import data
 import configuration
 import requests
