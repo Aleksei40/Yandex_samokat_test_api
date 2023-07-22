@@ -1,6 +1,8 @@
-﻿SELECT cr.login, ord."inDelivery"
+﻿Select cr.login, COUNT(ord."inDelivery")
 FROM "Couriers" AS cr
-LEFT JOIN "Orders" AS ord ON cr.id=ord."courierId";
+LEFT JOIN "Orders" AS ord ON cr.id=ord."courierId"
+Where ord."inDelivery"=true
+Group By cr.login;
 
 
 
